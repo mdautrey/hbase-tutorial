@@ -12,13 +12,29 @@
     </properties>
 
     <repositories>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+            <id>HDPReleases</id>
+            <name>HDP Releases</name>
+            <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.hbase</groupId>
-            <artifactId>hbase</artifactId>
-            <version>1.1.2</version>
+            <artifactId>hbase-client</artifactId>
+            <version>0.96.1.2.0.6.1-101-hadoop2</version>
         </dependency>
     </dependencies>
 
