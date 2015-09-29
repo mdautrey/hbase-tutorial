@@ -22,7 +22,7 @@ public class InsertData {
                 Bytes.toBytes("manager"));
         p.add(Bytes.toBytes("professional"), Bytes.toBytes("salary"), Bytes.toBytes("500"));
         hTable.put(p);
-        System.out.println("data inserted");
+        System.out.println("****\ndata inserted\n*******");
 
         hTable.close();
 
