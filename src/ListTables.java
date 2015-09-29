@@ -17,5 +17,9 @@ public class ListTables {
         for(HTableDescriptor htd : tableDescriptor){
             System.out.println(htd.getNameAsString());
         }
+        System.out.println("*****************");
+        for(int i = 0; i < tableDescriptor.length; i++){
+            System.out.println(tableDescriptor[i].getNameAsString());
+        }
     }
 }
